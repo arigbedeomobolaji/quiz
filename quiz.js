@@ -1,6 +1,6 @@
 //jshint esversion:6
 
-let question = [
+let questions = [
     {
         question: "What's my name: ",
         answer: "Arigbede Omobolaji"
@@ -10,8 +10,8 @@ let question = [
         answer: "paul"
     },
     {
-        question: "What's my sister's name : ",
-        answer: ["Arigbede Comfort", "Arigbede Olayinka"]
+        question: "What's my elder sister's name : ",
+        answer: "Arigbede Comfort",
     },
     {
         question: "Where's my state of origin: ",
@@ -19,4 +19,17 @@ let question = [
     },
 ];
 
-console.log(question[1].answer);
+let correct = 0;
+let answer;
+let question;
+let correctAnswer;
+for(let  i = 0; i < questions.length; i++){
+    question = questions[i].question;
+    correctAnswer = questions[i].answer;
+    answer = prompt(question);
+    if(correctAnswer.toLowerCase() === answer.toLowerCase()){
+        correct+= 1;
+    }
+}
+
+console.log("You got " + correct + " correctly.");
