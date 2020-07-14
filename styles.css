@@ -1,0 +1,20 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: bold;
+}
+
+.game-container{
+    max-width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    background-color: black;
+    color: white;
+    border: 1rem solid grey;
+}
+.btn{
+    padding: 1rem;
+    color: red;
+    background-color: yellow;
+}
