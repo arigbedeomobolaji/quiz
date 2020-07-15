@@ -1,3 +1,4 @@
+//jshint esversion:6git q
 const express = require("express");
 const bodyParser = require("body-parser");
 
