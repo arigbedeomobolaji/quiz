@@ -26,5 +26,8 @@ startGame.addEventListener("click", ()=>{
     quizContainer.classList.add("show-game");
 });
 
+const question = document.createElement("p");
+const options = document.createELement("div");
+
 
 
